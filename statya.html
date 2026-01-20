@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФИЗИКА - Статьи</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Логотип ФИЗИКА">
+                <h1>ФИЗИКА</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="statya.html" class="active">Статьи</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="articles-page">
+        <div class="page-header">
+            <h2>Научные статьи по физике</h2>
+            <p>Исследуйте мир физики через наши подробные статьи</p>
+        </div>
+
+        <div class="search-section">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Поиск по названию статьи...">
+                <button id="search-btn">Найти</button>
+            </div>
+            <div class="filter-options">
+                <select id="category-filter">
+                    <option value="all">Все категории</option>
+                    <option value="mechanics">Механика</option>
+                    <option value="thermodynamics">Термодинамика</option>
+                    <option value="electromagnetism">Электромагнетизм</option>
+                    <option value="optics">Оптика</option>
+                    <option value="quantum">Квантовая физика</option>
+                    <option value="astrophysics">Астрофизика</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="articles-container">
+            <div class="article-card" data-category="quantum">
+                <div class="article-image">
+                    <img src="si1.png" alt="Квантовая механика">
+                </div>
+                <div class="article-content">
+                    <h3><a href="s1.html">Основы квантовой механики</a></h3>
+                    <div class="article-meta">
+                        <span class="category quantum">Квантовая физика</span>
+                        <span class="date">15 марта 2025</span>
+                    </div>
+                    <p>Квантовая механика — фундаментальная теория, описывающая поведение микроскопических объектов. В статье рассматриваются основные принципы, включая волновую функцию, принцип неопределенности и квантовую суперпозицию.</p>
+                    <a href="s1.html" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+        <div class="pagination">
+            <a href="#" class="page-link active">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+            <a href="#" class="page-link">4</a>
+            <a href="#" class="page-link">5</a>
+            <a href="#" class="page-link next">Далее <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Логотип ФИЗИКА">
+                <span>© ФИЗИКА, 2026</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://t.me/PhysRabi" target="_blank">
+                    <i class="fab fa-telegram"></i> Наш Telegram-канал
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
